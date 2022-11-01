@@ -1,0 +1,21 @@
+server:
+  max-http-header-size: ${MAX_HTTP_HEADER_SIZE:50KB}
+  port: ${APPLICATION_PORT:8080}
+  servlet:
+    contextPath: /api/whatsapp
+  compression:
+    enabled: true
+    mime-types: application/json
+    min-response-size: 100000
+
+app:
+  host:
+    chatApi: https://graph.facebook.com/
+
+feign:
+  client:
+    config:
+      default:
+        loggerLevel: basic
+
+
