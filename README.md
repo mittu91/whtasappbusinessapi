@@ -48,7 +48,7 @@ curl -i -X POST \
 * finally send a message
 
 ```java
-
+https://developers.facebook.com/docs/messenger-platform/send-messages/templates
 *********** Get all template list *****************
         curl --location -g --request GET '{{URL}}/api/v1/getMessageTemplates' \
         --header 'Authorization: Bearer {{token}}' \
